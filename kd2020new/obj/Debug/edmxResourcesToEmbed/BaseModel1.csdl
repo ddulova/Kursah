@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="avtoserviceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cars">
+    <Key>
+      <PropertyRef Name="cars_id" />
+    </Key>
+    <Property Name="cars_id" Type="Int32" Nullable="false" />
+    <Property Name="mark" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="year_of_issue" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Customers_cars" Relationship="Self.FK_Customers_cars_Cars" FromRole="Cars" ToRole="Customers_cars" />
+  </EntityType>
+  <EntityType Name="Customers_cars">
+    <Key>
+      <PropertyRef Name="cars_id" />
+      <PropertyRef Name="owners_id" />
+    </Key>
+    <Property Name="cars_id" Type="Int32" Nullable="false" />
+    <Property Name="owners_id" Type="Int32" Nullable="false" />
+    <Property Name="date_of_purchase" Type="DateTime" Precision="0" />
+    <Property Name="orders_id" Type="Int32" />
+    <NavigationProperty Name="Cars" Relationship="Self.FK_Customers_cars_Cars" FromRole="Customers_cars" ToRole="Cars" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Customers_cars_Orders" FromRole="Customers_cars" ToRole="Orders" />
+    <NavigationProperty Name="Owners" Relationship="Self.FK_Customers_cars_Owners" FromRole="Customers_cars" ToRole="Owners" />
+  </EntityType>
+  <EntityType Name="Masters">
+    <Key>
+      <PropertyRef Name="masters_id" />
+    </Key>
+    <Property Name="masters_id" Type="Int32" Nullable="false" />
+    <Property Name="specialty" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="last_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="first_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="middle_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="passport_number" Type="Int32" />
+    <Property Name="passport_series" Type="Int32" />
+    <Property Name="birth" Type="DateTime" Precision="0" />
+    <Property Name="city" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="Int32" />
+    <Property Name="date_of_employment" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Role" Relationship="Self.FK_Role_Masters" FromRole="Masters" ToRole="Role" />
+    <NavigationProperty Name="Servicess" Relationship="Self.FK_Servicess_Masters" FromRole="Masters" ToRole="Servicess" />
+  </EntityType>
+  <EntityType Name="New_spare_parts">
+    <Key>
+      <PropertyRef Name="parts_id" />
+    </Key>
+    <Property Name="parts_id" Type="Int32" Nullable="false" />
+    <Property Name="names" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="Int32" />
+    <Property Name="guarantee" Type="DateTime" Precision="0" />
+    <Property Name="delivery_date" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Spare_parts_in_servics" Relationship="Self.FK_Spare_parts_in_servics_New_spare_parts" FromRole="New_spare_parts" ToRole="Spare_parts_in_servics" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="orders_id" />
+    </Key>
+    <Property Name="orders_id" Type="Int32" Nullable="false" />
+    <Property Name="cars_id" Type="Int32" />
+    <Property Name="owners_id" Type="Int32" />
+    <Property Name="date_of_receipt" Type="DateTime" Precision="0" />
+    <Property Name="date_expiry" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Customers_cars" Relationship="Self.FK_Customers_cars_Orders" FromRole="Orders" ToRole="Customers_cars" />
+    <NavigationProperty Name="Servicess" Relationship="Self.FK_Servicess_Orders" FromRole="Orders" ToRole="Servicess" />
+  </EntityType>
+  <EntityType Name="Owners">
+    <Key>
+      <PropertyRef Name="owners_id" />
+    </Key>
+    <Property Name="owners_id" Type="Int32" Nullable="false" />
+    <Property Name="last_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="first_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="middle_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="passport_number" Type="Int32" />
+    <Property Name="passport_series" Type="Int32" />
+    <Property Name="city" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Customers_cars" Relationship="Self.FK_Customers_cars_Owners" FromRole="Owners" ToRole="Customers_cars" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="masters_id" />
+      <PropertyRef Name="login" />
+    </Key>
+    <Property Name="masters_id" Type="Int32" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="role1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Masters" Relationship="Self.FK_Role_Masters" FromRole="Role" ToRole="Masters" />
+  </EntityType>
+  <EntityType Name="Servicess">
+    <Key>
+      <PropertyRef Name="servicess_id" />
+    </Key>
+    <Property Name="servicess_id" Type="Int32" Nullable="false" />
+    <Property Name="id_type" Type="Int32" />
+    <Property Name="masters_id" Type="Int32" />
+    <Property Name="orders_id" Type="Int32" />
+    <NavigationProperty Name="Masters" Relationship="Self.FK_Servicess_Masters" FromRole="Servicess" ToRole="Masters" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Servicess_Orders" FromRole="Servicess" ToRole="Orders" />
+    <NavigationProperty Name="Type_of_jobs" Relationship="Self.FK_Servicess_Type_of_jobs" FromRole="Servicess" ToRole="Type_of_jobs" />
+    <NavigationProperty Name="Spare_parts_in_servics" Relationship="Self.FK_Spare_parts_in_servics_Servicess" FromRole="Servicess" ToRole="Spare_parts_in_servics" />
+  </EntityType>
+  <EntityType Name="Spare_parts_in_servics">
+    <Key>
+      <PropertyRef Name="parts_id" />
+      <PropertyRef Name="servicess_id" />
+    </Key>
+    <Property Name="parts_id" Type="Int32" Nullable="false" />
+    <Property Name="servicess_id" Type="Int32" Nullable="false" />
+    <Property Name="quantity" Type="Int32" />
+    <NavigationProperty Name="New_spare_parts" Relationship="Self.FK_Spare_parts_in_servics_New_spare_parts" FromRole="Spare_parts_in_servics" ToRole="New_spare_parts" />
+    <NavigationProperty Name="Servicess" Relationship="Self.FK_Spare_parts_in_servics_Servicess" FromRole="Spare_parts_in_servics" ToRole="Servicess" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Type_of_jobs">
+    <Key>
+      <PropertyRef Name="id_type" />
+    </Key>
+    <Property Name="id_type" Type="Int32" Nullable="false" />
+    <Property Name="names" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="Int32" />
+    <Property Name="guarantee" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Servicess" Relationship="Self.FK_Servicess_Type_of_jobs" FromRole="Type_of_jobs" ToRole="Servicess" />
+  </EntityType>
+  <Association Name="FK_Customers_cars_Cars">
+    <End Role="Cars" Type="Self.Cars" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Customers_cars" Type="Self.Customers_cars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cars">
+        <PropertyRef Name="cars_id" />
+      </Principal>
+      <Dependent Role="Customers_cars">
+        <PropertyRef Name="cars_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_cars_Orders">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Customers_cars" Type="Self.Customers_cars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="orders_id" />
+      </Principal>
+      <Dependent Role="Customers_cars">
+        <PropertyRef Name="orders_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_cars_Owners">
+    <End Role="Owners" Type="Self.Owners" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Customers_cars" Type="Self.Customers_cars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Owners">
+        <PropertyRef Name="owners_id" />
+      </Principal>
+      <Dependent Role="Customers_cars">
+        <PropertyRef Name="owners_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Role_Masters">
+    <End Role="Masters" Type="Self.Masters" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Role" Type="Self.Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Masters">
+        <PropertyRef Name="masters_id" />
+      </Principal>
+      <Dependent Role="Role">
+        <PropertyRef Name="masters_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Servicess_Masters">
+    <End Role="Masters" Type="Self.Masters" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Servicess" Type="Self.Servicess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Masters">
+        <PropertyRef Name="masters_id" />
+      </Principal>
+      <Dependent Role="Servicess">
+        <PropertyRef Name="masters_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Spare_parts_in_servics_New_spare_parts">
+    <End Role="New_spare_parts" Type="Self.New_spare_parts" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Spare_parts_in_servics" Type="Self.Spare_parts_in_servics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="New_spare_parts">
+        <PropertyRef Name="parts_id" />
+      </Principal>
+      <Dependent Role="Spare_parts_in_servics">
+        <PropertyRef Name="parts_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Servicess_Orders">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Servicess" Type="Self.Servicess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="orders_id" />
+      </Principal>
+      <Dependent Role="Servicess">
+        <PropertyRef Name="orders_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Servicess_Type_of_jobs">
+    <End Role="Type_of_jobs" Type="Self.Type_of_jobs" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Servicess" Type="Self.Servicess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type_of_jobs">
+        <PropertyRef Name="id_type" />
+      </Principal>
+      <Dependent Role="Servicess">
+        <PropertyRef Name="id_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Spare_parts_in_servics_Servicess">
+    <End Role="Servicess" Type="Self.Servicess" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Spare_parts_in_servics" Type="Self.Spare_parts_in_servics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicess">
+        <PropertyRef Name="servicess_id" />
+      </Principal>
+      <Dependent Role="Spare_parts_in_servics">
+        <PropertyRef Name="servicess_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="avtoserviceEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cars" EntityType="Self.Cars" />
+    <EntitySet Name="Customers_cars" EntityType="Self.Customers_cars" />
+    <EntitySet Name="Masters" EntityType="Self.Masters" />
+    <EntitySet Name="New_spare_parts" EntityType="Self.New_spare_parts" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" />
+    <EntitySet Name="Owners" EntityType="Self.Owners" />
+    <EntitySet Name="Role" EntityType="Self.Role" />
+    <EntitySet Name="Servicess" EntityType="Self.Servicess" />
+    <EntitySet Name="Spare_parts_in_servics" EntityType="Self.Spare_parts_in_servics" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Type_of_jobs" EntityType="Self.Type_of_jobs" />
+    <AssociationSet Name="FK_Customers_cars_Cars" Association="Self.FK_Customers_cars_Cars">
+      <End Role="Cars" EntitySet="Cars" />
+      <End Role="Customers_cars" EntitySet="Customers_cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_cars_Orders" Association="Self.FK_Customers_cars_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Customers_cars" EntitySet="Customers_cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_cars_Owners" Association="Self.FK_Customers_cars_Owners">
+      <End Role="Owners" EntitySet="Owners" />
+      <End Role="Customers_cars" EntitySet="Customers_cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Role_Masters" Association="Self.FK_Role_Masters">
+      <End Role="Masters" EntitySet="Masters" />
+      <End Role="Role" EntitySet="Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Servicess_Masters" Association="Self.FK_Servicess_Masters">
+      <End Role="Masters" EntitySet="Masters" />
+      <End Role="Servicess" EntitySet="Servicess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Spare_parts_in_servics_New_spare_parts" Association="Self.FK_Spare_parts_in_servics_New_spare_parts">
+      <End Role="New_spare_parts" EntitySet="New_spare_parts" />
+      <End Role="Spare_parts_in_servics" EntitySet="Spare_parts_in_servics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Servicess_Orders" Association="Self.FK_Servicess_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Servicess" EntitySet="Servicess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Servicess_Type_of_jobs" Association="Self.FK_Servicess_Type_of_jobs">
+      <End Role="Type_of_jobs" EntitySet="Type_of_jobs" />
+      <End Role="Servicess" EntitySet="Servicess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Spare_parts_in_servics_Servicess" Association="Self.FK_Spare_parts_in_servics_Servicess">
+      <End Role="Servicess" EntitySet="Servicess" />
+      <End Role="Spare_parts_in_servics" EntitySet="Spare_parts_in_servics" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

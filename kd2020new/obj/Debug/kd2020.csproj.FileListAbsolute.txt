@@ -1,0 +1,193 @@
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\kd2020.csprojAssemblyReference.cache
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\MainWindow.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\App.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\kd2020_MarkupCompile.cache
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\kd2020_MarkupCompile.lref
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\bin\Debug\kd2020.exe.config
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\bin\Debug\kd2020.exe
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\bin\Debug\kd2020.pdb
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\MainWindow.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\kd2020.g.resources
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\kd2020.Properties.Resources.resources
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\kd2020.csproj.GenerateResource.cache
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\kd2020.csproj.CoreCompileInputs.cache
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\kd2020.exe
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\kd2020.pdb
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\Pages\Page1.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\Pages\Page1.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\Pages\BasaPage.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\kd2020_Content.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020\obj\Debug\Pages\Page2.g.cs
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\kd2020.csprojAssemblyReference.cache
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\MainWindow.g.cs
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\Pages\Page1.g.cs
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\Pages\Page2.g.cs
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\App.g.cs
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\kd2020_Content.g.cs
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\kd2020_MarkupCompile.cache
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\kd2020_MarkupCompile.lref
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\kd2020.exe
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\kd2020.pdb
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\bin\Debug\kd2020.exe.config
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\bin\Debug\kd2020.exe
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\bin\Debug\kd2020.pdb
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\bin\Debug\EntityFramework.dll
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\bin\Debug\EntityFramework.SqlServer.dll
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\bin\Debug\EntityFramework.xml
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\bin\Debug\EntityFramework.SqlServer.xml
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\bin\Debug\ru\EntityFramework.resources.dll
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\MainWindow.baml
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\Pages\Page1.baml
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\Pages\Page2.baml
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\kd2020.g.resources
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\kd2020.Properties.Resources.resources
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\kd2020.csproj.GenerateResource.cache
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\kd2020.csproj.CoreCompileInputs.cache
+D:\Lena2\ПКС-2019_20\ПКС-304\Дулова\Дуловаkd2020\kd2020\obj\Debug\kd2020.csproj.CopyComplete
+C:\Users\ddulo\Desktop\kd2020new\bin\Debug\kd2020.exe.config
+C:\Users\ddulo\Desktop\kd2020new\bin\Debug\kd2020.exe
+C:\Users\ddulo\Desktop\kd2020new\bin\Debug\kd2020.pdb
+C:\Users\ddulo\Desktop\kd2020new\bin\Debug\EntityFramework.dll
+C:\Users\ddulo\Desktop\kd2020new\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ddulo\Desktop\kd2020new\bin\Debug\EntityFramework.xml
+C:\Users\ddulo\Desktop\kd2020new\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ddulo\Desktop\kd2020new\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\kd2020.csprojAssemblyReference.cache
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\MainWindow.g.cs
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\Pages\Page1.g.cs
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\Pages\Page2.g.cs
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\App.g.cs
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\kd2020_Content.g.cs
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\kd2020_MarkupCompile.cache
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\kd2020_MarkupCompile.lref
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\MainWindow.baml
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\Pages\Page1.baml
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\Pages\Page2.baml
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\kd2020.g.resources
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\kd2020.Properties.Resources.resources
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\kd2020.csproj.GenerateResource.cache
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\kd2020.csproj.CoreCompileInputs.cache
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\kd2020.csproj.CopyComplete
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\kd2020.exe
+C:\Users\ddulo\Desktop\kd2020new\obj\Debug\kd2020.pdb
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\kd2020.exe.config
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\kd2020.exe
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\kd2020.pdb
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\EntityFramework.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\EntityFramework.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\MainWindow.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Page1.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\App.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\kd2020_Content.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\kd2020_MarkupCompile.cache
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\kd2020_MarkupCompile.lref
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\MainWindow.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Page1.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\kd2020.g.resources
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\kd2020.Properties.Resources.resources
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\kd2020.csproj.GenerateResource.cache
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\kd2020.csproj.CoreCompileInputs.cache
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\kd2020.csproj.CopyComplete
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\kd2020.exe
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\kd2020.pdb
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Page2.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Page2.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\App.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Glav.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Glav.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Owners.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Owners.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Masters.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Roli.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\New_spare_parts.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Masters.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\New_spare_parts.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Roli.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Type_of.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Type_of.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Orders.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Spare_parts_in_servics.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Orders.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\Spare_parts_in_servics.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\AddCar.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\AddCar.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\AddRole.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\AddRole.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Identity.Client.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Buffers.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Memory.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Data.SqlClient.pdb
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\Microsoft.Identity.Client.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Buffers.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Collections.Immutable.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Memory.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\kd2020.csprojAssemblyReference.cache
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\AddMasters.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\AddSpare_parts_in_servics.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\AddMasters.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\AddSpare_parts_in_servics.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\AddOrders.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\AddOrders.baml
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\ClientInfo.g.cs
+C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\obj\Debug\Pages\ClientInfo.baml

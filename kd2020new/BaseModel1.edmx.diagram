@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5431da1d2b0843329e29f24893c26700" Name="Diagram1">
+        <EntityTypeShape EntityType="avtoserviceModel.Cars" Width="1.5" PointX="0.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="avtoserviceModel.Customers_cars" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="avtoserviceModel.Masters" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="avtoserviceModel.New_spare_parts" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="avtoserviceModel.Orders" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="avtoserviceModel.Owners" Width="1.5" PointX="0.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="avtoserviceModel.Role" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="avtoserviceModel.Servicess" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="avtoserviceModel.Spare_parts_in_servics" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="avtoserviceModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="avtoserviceModel.Type_of_jobs" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <AssociationConnector Association="avtoserviceModel.FK_Customers_cars_Cars" ManuallyRouted="false" />
+        <AssociationConnector Association="avtoserviceModel.FK_Customers_cars_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="avtoserviceModel.FK_Customers_cars_Owners" ManuallyRouted="false" />
+        <AssociationConnector Association="avtoserviceModel.FK_Role_Masters" ManuallyRouted="false" />
+        <AssociationConnector Association="avtoserviceModel.FK_Servicess_Masters" ManuallyRouted="false" />
+        <AssociationConnector Association="avtoserviceModel.FK_Spare_parts_in_servics_New_spare_parts" ManuallyRouted="false" />
+        <AssociationConnector Association="avtoserviceModel.FK_Servicess_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="avtoserviceModel.FK_Servicess_Type_of_jobs" ManuallyRouted="false" />
+        <AssociationConnector Association="avtoserviceModel.FK_Spare_parts_in_servics_Servicess" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
