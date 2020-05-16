@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ddulo\Desktop\Колледж\Курсовая БД\kd2020new\App.xaml
-17-772394493
+18-1246580483
 277049211
-38-1937531796
+39-1735274457
 52910613570
-AddMasters.xaml;AddOrders.xaml;MainWindow.xaml;Pages\AddCar.xaml;Pages\AddRole.xaml;Pages\AddSpare_parts_in_servics.xaml;Pages\ClientInfo.xaml;Pages\Glav.xaml;Pages\Masters.xaml;Pages\New_spare_parts.xaml;Pages\Orders.xaml;Pages\Owners.xaml;Pages\Page1.xaml;Pages\Page2.xaml;Pages\Roli.xaml;Pages\Spare_parts_in_servics.xaml;Pages\Type_of.xaml;
+AddMasters.xaml;AddOrders.xaml;AddOwners.xaml;MainWindow.xaml;Pages\AddCar.xaml;Pages\AddCustomers.xaml;Pages\AddRole.xaml;Pages\AddType_of.xaml;Pages\ClientInfo.xaml;Pages\Customers_cars.xaml;Pages\Glav.xaml;Pages\Masters.xaml;Pages\Orders.xaml;Pages\Owners.xaml;Pages\Page1.xaml;Pages\Page2.xaml;Pages\Roli.xaml;Pages\Type_of.xaml;
 
 True
 

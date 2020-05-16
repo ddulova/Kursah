@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
 using kd2020.Pages;
+using static kd2020.PodKey;
 namespace kd2020
 {
     /// <summary>
@@ -24,6 +25,14 @@ namespace kd2020
         public MainWindow()
         {
             InitializeComponent();
+            {// Удаление данных <Д
+                //AE.Servicess.RemoveRange(AE.Servicess);
+                //AE.Orders.RemoveRange(AE.Orders);
+                //AE.Customers_cars.RemoveRange(AE.Customers_cars);
+                //AE.Cars.RemoveRange(AE.Cars);
+                //AE.Owners.RemoveRange(AE.Owners);
+                //AE.SaveChanges();
+            }
             MainFrame.Navigate(new Page1());
             Manager.MainFrame = MainFrame;
         }

@@ -9,26 +9,33 @@
       Title="ClientInfo">
 
     <Grid>
-        <ScrollViewer Name="ClInfo" HorizontalAlignment="Left" Height="134" Margin="25,94,0,0" VerticalAlignment="Top" Width="260"/>
-        <ListView  Name="InfoCl" HorizontalAlignment="Left" Height="349" Margin="290,56,0,0" VerticalAlignment="Top" Width="500" IsSynchronizedWithCurrentItem="True" Background="#FFFBFBFB">
+        <ScrollViewer Name="ClInfo" HorizontalAlignment="Left" Height="134" Margin="25,94,0,0" VerticalAlignment="Top" Width="260" Visibility="Hidden"/>
+        <ScrollViewer Name="CarInfo" HorizontalAlignment="Left" Height="134" Margin="25,94,0,0" VerticalAlignment="Top" Width="260" Visibility="Hidden"/>
+        <ListView  Name="InfoCl" HorizontalAlignment="Left" Height="286" Margin="290,56,0,0" VerticalAlignment="Top" Width="474" IsSynchronizedWithCurrentItem="True" Background="#FFFBFBFB">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Фамилия" DisplayMemberBinding="{Binding lastName}"/>
 
-                <GridViewColumn Header="Имя" DisplayMemberBinding="{Binding firstName}" />
-                <GridViewColumn Header="Номер паспорта" DisplayMemberBinding="{Binding pasportNum}"/>
-                <GridViewColumn Header="Серия паспорта" DisplayMemberBinding="{Binding pasportSer}"/>
-                <GridViewColumn Header="Услуга" DisplayMemberBinding="{Binding Yslga}"/>
-                <GridViewColumn Header="Цена" DisplayMemberBinding="{Binding priCe}"/>
-                <GridViewColumn Header="Телефон" DisplayMemberBinding="{Binding phoneT}"/>
-                <GridViewColumn Header="Дата начала" DisplayMemberBinding="{Binding dateN}"/>
-                <GridViewColumn Header="Дата окончания" DisplayMemberBinding="{Binding dateO}"/>
+                    <GridViewColumn Header="Имя" DisplayMemberBinding="{Binding firstName}" />
+                    <GridViewColumn Header="Номер машины" DisplayMemberBinding="{Binding cars_id}"/>
+                    <GridViewColumn Header="Номер паспорта" DisplayMemberBinding="{Binding pasportNum}"/>
+                    <GridViewColumn Header="Серия паспорта" DisplayMemberBinding="{Binding pasportSer}"/>
+                    <GridViewColumn Header="Услуга" DisplayMemberBinding="{Binding Yslga}"/>
+                    <GridViewColumn Header="Цена" DisplayMemberBinding="{Binding priCe}"/>
+                    <GridViewColumn Header="Телефон" DisplayMemberBinding="{Binding phoneT}"/>
+                    <GridViewColumn Header="Дата начала" DisplayMemberBinding="{Binding dateN}"/>
+                    <GridViewColumn Header="Дата окончания" DisplayMemberBinding="{Binding dateO}"/>
 
                 </GridView>
             </ListView.View>
 
         </ListView>
-        <Button Content="Найти" Name="Poisk" HorizontalAlignment="Left" Margin="467,410,0,0" VerticalAlignment="Top" Width="135"/>
+        <Button Content="Печать" Click="Pesh_Click" HorizontalAlignment="Left" Margin="668,372,0,0" VerticalAlignment="Top" Width="96"/>
+        <RadioButton Content="По клиенту" HorizontalAlignment="Left" Margin="25,44,0,0" VerticalAlignment="Top" GroupName="TypeSearch" Checked="ChangeTypeSearch"/>
+        <RadioButton Content="По машине" HorizontalAlignment="Left" Margin="110,44,0,0" VerticalAlignment="Top" GroupName="TypeSearch" Checked="ChangeTypeSearch"/>
+        <TextBox Visibility="Hidden"  Name="PolePoi" HorizontalAlignment="Left" Height="23" Margin="25,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167" TextChanged="PolePoi_TextChanged"/>
+        <Button Visibility="Hidden" Name="PB" Click="Poisk_Click" Content="Поиск" HorizontalAlignment="Left" Margin="192,59,0,0" VerticalAlignment="Top" Width="63" Height="23"/>
+
 
 
     </Grid>

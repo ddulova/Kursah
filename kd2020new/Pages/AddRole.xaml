@@ -25,7 +25,7 @@
         <TextBlock Text="Логин" Grid.Row="1"></TextBlock>
         <TextBlock Text="Пароль" Grid.Row="2"></TextBlock>
         <TextBlock Text="Роль" Grid.Row="3"></TextBlock>
-        <TextBox Text ="{Binding masters_id}" Grid.Column="1" Width="595" HorizontalAlignment="Left" Margin="5,30,0,37" Height="23"></TextBox>
+        <TextBox Name="IDmas" Text ="{Binding masters_id}" Grid.Column="1" Width="595" HorizontalAlignment="Left" Margin="5,30,0,37" Height="23"></TextBox>
         <TextBox Text ="{Binding login}" Grid.Column="1" Width="595" Grid.Row="1" HorizontalAlignment="Left" Margin="5,30,0,37" Height="23"></TextBox>
         <TextBox Text ="{Binding  password}" MaxLength="50" Width="595" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Margin="5,30,0,37" Height="23"></TextBox>
         <TextBox Text ="{Binding  role1}" MaxLength="50" Width="595" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Margin="5,30,0,37" Height="23"></TextBox>

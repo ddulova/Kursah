@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static kd2020.PodKey;
 
 namespace kd2020.Pages
 {
@@ -20,26 +21,48 @@ namespace kd2020.Pages
     /// </summary> 
     public partial class AddRole : Page
     {
-        private Role _currentRoli = new Role();
+        private Role _currentRole = new Role();
+        private string Mode;
+        private int ID;
         public AddRole(Role selectedRole)
         {
             InitializeComponent();
+             if (selectedRole != null)
+            {
+                Mode = "Edit";
+                IDmas.IsEnabled = false;
 
+            }
+            else
+            {
+                Mode = "New";
+                IDmas.IsEnabled = false;
+
+                ID = 0;
+                foreach (Role o in AE.Role)
+                {
+                    if (o.masters_id == ID) ID += 1;
+                    if (o.masters_id > ID) ID = o.masters_id + 1;
+
+                }
+                _currentRole.masters_id = ID;
+            }
             if (selectedRole != null)
-                _currentRoli = selectedRole;
+                _currentRole = selectedRole;
 
-            DataContext = _currentRoli;
+
+            DataContext = _currentRole;
         }
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
             StringBuilder errors = new StringBuilder();
-            if (_currentRoli.password == null)
-                errors.AppendLine("Введите логин");
+            if (_currentRole.password == null)
+                errors.AppendLine("Введите пароль");
 
-            if (_currentRoli.login ==null)
-                errors.AppendLine("Логин");
-            if (_currentRoli.role1 == null)
+            if (_currentRole.login ==null)
+                errors.AppendLine("логин");
+            if (_currentRole.role1 == null)
                 errors.AppendLine("Укажите роль");
 
             if (errors.Length > 0)
@@ -47,11 +70,19 @@ namespace kd2020.Pages
                 MessageBox.Show(errors.ToString());
                 return;
             }
-            if (_currentRoli.masters_id != 0)
-                avtoserviceEntities2.GetContext().Role.Add(_currentRoli);
+            if (Mode == "New")
+                AE.Role.Add(_currentRole);
+            else
+            {
+
+                Role o = AE.Role.Find(_currentRole.masters_id,_currentRole.login);
+                o.login = _currentRole.login;
+                o.password = _currentRole.password;
+                o.role1 = _currentRole.role1;
+            }
             try
             {
-                avtoserviceEntities2.GetContext().SaveChanges();
+                AE.SaveChanges();
                 MessageBox.Show("Информация сохранена");
                 Manager.MainFrame.GoBack();
             }

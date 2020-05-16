@@ -29,6 +29,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+
         </Grid.RowDefinitions>
         <TextBlock Text="Номер мастера"></TextBlock>
         <TextBlock Text="Специальность" Grid.Row="1"></TextBlock>
@@ -40,9 +41,10 @@
         <TextBlock Text="Дата рождения" Grid.Row="7"></TextBlock>
         <TextBlock Text="Город" Grid.Row="8"></TextBlock>
         <TextBlock Text="Телефон" Grid.Row="9"></TextBlock>
+
         <TextBlock Text="Дата зачисления" Grid.Row="10"></TextBlock>
 
-        <TextBox Text ="{Binding masters_id}" Grid.Column="1" Width="600" HorizontalAlignment="Left" Margin="0,3,0,11.333" Height="23"></TextBox>
+        <TextBox  Name="IDmasters"  Text ="{Binding masters_id}" Grid.Column="1" Width="600" HorizontalAlignment="Left" Margin="0,3,0,11.333" Height="23"></TextBox>
         <TextBox Text ="{Binding specialty}" Grid.Column="1" Width="600" Grid.Row="1" HorizontalAlignment="Left" Margin="0,3.667,0,10.667" Height="23"></TextBox>
         <TextBox Text ="{Binding  last_name}" MaxLength="50" Width="600" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Margin="0,3.333,0,11" Height="23"></TextBox>
         <TextBox Text ="{Binding first_name}" Grid.Column="1" Grid.Row="3" Width="600" HorizontalAlignment="Left" Margin="0,3,0,11.333" Height="23"></TextBox>
@@ -51,8 +53,9 @@
         <TextBox Text ="{Binding passport_series}" Grid.Column="1" Grid.Row="6" Width="600" HorizontalAlignment="Left" Margin="0,3,0,11.333" Height="23"></TextBox>
         <TextBox Text ="{Binding birth}" Grid.Column="1" Width="600" Grid.Row="7" HorizontalAlignment="Left" Margin="0,3.667,0,11.333" Height="23"></TextBox>
         <TextBox Text ="{Binding  city}" MaxLength="50" Width="600" Grid.Column="1" Grid.Row="8" HorizontalAlignment="Left" Margin="0,3.333,0,11" Height="23"></TextBox>
-        <TextBox Text ="{Binding phone}" Grid.Column="1" Grid.Row="9" Width="605" HorizontalAlignment="Left" Margin="0,3.333,0,11" Height="23"></TextBox>
-        <TextBox Text ="{Binding date_of_employment}" Grid.Column="1" Width="600" Grid.Row="10" HorizontalAlignment="Left" Margin="0,3.333,0,11" Height="23"></TextBox>
+        <TextBox Text ="{Binding  phone}" MaxLength="50" Width="600" Grid.Column="1" Grid.Row="9" HorizontalAlignment="Left" Margin="0,3.333,0,11" Height="23"></TextBox>
+
+        <TextBox Text ="{Binding date_of_employment}" Grid.Column="1" Width="600" Grid.Row="10" HorizontalAlignment="Left" Margin="10,10.333,-10,4" Height="23"/>
 
         <Button Content="Сохранить" Grid.ColumnSpan="2" Grid.Row="11" Name="BtnSave" Click="BtnSave_Click">
         </Button>

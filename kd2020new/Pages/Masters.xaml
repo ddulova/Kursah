@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:kd2020.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Masters">
+      Title="Masters" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -26,7 +26,8 @@
                 <DataGridTextColumn Header="Серия" Binding="{Binding  passport_series}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Дата рождения" Binding="{Binding birth}" Width="100"></DataGridTextColumn>
                 <DataGridTextColumn Header="Город" Binding="{Binding city}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Телефон" Binding="{Binding  phone}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding phone}" Width="*"></DataGridTextColumn>
+                
                 <DataGridTextColumn Header="Дата зачисления" Binding="{Binding date_of_employment }" Width="100"></DataGridTextColumn>
                 <DataGridTemplateColumn Width="auto">
                     <DataGridTemplateColumn.CellTemplate>

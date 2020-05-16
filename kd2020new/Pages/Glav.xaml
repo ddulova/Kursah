@@ -9,36 +9,28 @@
       Title="Glav">
 
     <Grid>
-        <TextBlock Text="Данные Автосервиса" Margin="341,87,342,347"></TextBlock>
-
-        <Button Content="Открыть" HorizontalAlignment="Left" Height="30" Margin="101,155,0,0" Width="122" VerticalAlignment="Top"  Click="OpAvt_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="32,163,0,0" TextWrapping="Wrap" Text="Автомобили" VerticalAlignment="Top"/>
-
-        <Button Content="Открыть" HorizontalAlignment="Left" Height="30" Margin="636,226,0,0" Width="122" VerticalAlignment="Top"  Click="OpIsl_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="579,233,0,0" TextWrapping="Wrap" Text="Услуги" VerticalAlignment="Top"/>
-       
-        <Button Content="Открыть" HorizontalAlignment="Left" Height="30" Margin="636,306,0,0" Width="122" VerticalAlignment="Top"  Click="OpPotr"/>
-        <TextBlock HorizontalAlignment="Left" Margin="489,321,0,0" TextWrapping="Wrap" Text="Использованные запчасти" VerticalAlignment="Top"/>
-
-        <Button Content="Открыть" HorizontalAlignment="Left" Height="30" Margin="101,307,0,0" Width="122" VerticalAlignment="Top"  Click="OpOr"/>
-        <TextBlock HorizontalAlignment="Left" Margin="40,315,0,0" TextWrapping="Wrap" Text="Заказы" VerticalAlignment="Top"/>
-
-        <Button Content="Открыть" HorizontalAlignment="Left" Height="30" Margin="341,190,0,0" Width="122" VerticalAlignment="Top"  Click="OpCl_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="273,204,0,0" TextWrapping="Wrap" Text="Клиенты" VerticalAlignment="Top"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="144*"/>
+            <RowDefinition Height="143*"/>
+            <RowDefinition Height="163*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="65*"/>
+        </Grid.ColumnDefinitions>
 
 
-        <Button Content="Открыть" HorizontalAlignment="Left" Height="30" Margin="101,220,0,0" Width="122" VerticalAlignment="Top"  Click="OpMast_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="32,234,0,0" TextWrapping="Wrap" Text="Мастера" VerticalAlignment="Top"/>
+        <Button Content="Автомобили" HorizontalAlignment="Left" Height="42" Margin="10,62,0,0" Width="296" VerticalAlignment="Top"  Click="OpAvt_Click" Grid.Column="1"/>
 
-
-
-        <Button Content="Открыть" HorizontalAlignment="Left" Height="30" Margin="636,152,0,0" Width="122" VerticalAlignment="Top"  Click="OpNew_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="542,166,0,0" TextWrapping="Wrap" Text="Новые запчасти" VerticalAlignment="Top"/>
-
-
-        <Button Content="Открыть" HorizontalAlignment="Left" Height="30" Margin="341,255,0,0" Width="122" VerticalAlignment="Top"  Click="OpRoli_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="273,262,0,0" TextWrapping="Wrap" Text="Роли" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="341,321,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click"/>
+        <Button Content="Услуги" HorizontalAlignment="Left" Height="42" Margin="10,57,0,0" Width="296" VerticalAlignment="Top"  Click="OpIsl_Click" Grid.Column="1" Grid.Row="1"/>
+        <Button Content="Заказы" HorizontalAlignment="Left" Height="107" Margin="20,62,0,0" Width="204" VerticalAlignment="Top"  Click="OpOr" Grid.RowSpan="2"/>
+        <Button Content="Клиенты" HorizontalAlignment="Left" Height="42" Margin="10,127,0,0" Width="296" VerticalAlignment="Top"  Click="OpCl_Click" Grid.Column="1" Grid.RowSpan="2"/>
+        <Button Content="Мастера" HorizontalAlignment="Left" Height="42" Margin="10,117,0,0" Width="296" VerticalAlignment="Top"  Click="OpMast_Click" RenderTransformOrigin="0.456,0.45" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"/>
+        <Button Content="Роли" HorizontalAlignment="Left" Height="42" Margin="10,62.667,0,0" Width="296" VerticalAlignment="Top"  Click="OpRoli_Click" Grid.Column="1" Grid.Row="2" RenderTransformOrigin="0.571,1.167"/>
+        <Button Content="Данные клиента" HorizontalAlignment="Left" Height="42" Margin="184,109.667,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click" Grid.Column="1" Grid.Row="2"/>
+        <Button Content="Машины клиентов" HorizontalAlignment="Left" Height="42" Margin="10,109.667,0,0" VerticalAlignment="Top" Width="122" Click="CarCl_Click" Grid.Column="1" Grid.Row="2"/>
+        <Button Content="Выйти" HorizontalAlignment="Left" Margin="138,62,0,0" VerticalAlignment="Top" Width="92" Height="29" Grid.Column="2" Click="Button_Click_1"/>
 
 
 

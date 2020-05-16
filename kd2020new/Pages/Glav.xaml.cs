@@ -45,11 +45,7 @@ namespace kd2020.Pages
             return;
         }
   
-        private void OpNew_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new New_spare_parts());
-            return;
-        }
+    
 
         private void OpMast_Click(object sender, RoutedEventArgs e)
         {
@@ -63,11 +59,7 @@ namespace kd2020.Pages
             return;
         }
 
-        private void OpPotr(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Spare_parts_in_servics());
-            return;
-        }
+      
 
         private void OpOr(object sender, RoutedEventArgs e)
         {
@@ -79,6 +71,25 @@ namespace kd2020.Pages
         {
             NavigationService.Navigate(new ClientInfo());
             
+        }
+
+        private void CarCl_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Customers_cars());
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Вы точно хотите выйти?", "Вы уверены?", MessageBoxButton.YesNo);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    NavigationService.Navigate(new Page1());
+                    Roly = "";
+                    break;
+            }
+          
+
         }
     }
 }

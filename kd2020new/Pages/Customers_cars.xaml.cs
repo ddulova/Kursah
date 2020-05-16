@@ -17,13 +17,12 @@ using static kd2020.PodKey;
 namespace kd2020.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Spare_parts_in_servics.xaml
+    /// Логика взаимодействия для Customers_cars.xaml
     /// </summary>
-    public partial class Spare_parts_in_servics : Page
+    public partial class Customers_cars : Page
     {
-        public Spare_parts_in_servics()
+        public Customers_cars()
         {
-
             InitializeComponent();
             switch (Roly)
             {
@@ -39,34 +38,27 @@ namespace kd2020.Pages
 
 
             }
-           // DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Spare_parts_in_servics.ToList();
-        }
-
-        private void BtnEdit_Click(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new AddSpare_parts_in_servics((sender as Button).DataContext as Spare_parts_in_servics));
+             DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Customers_cars.ToList();
         }
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new AddSpare_parts_in_servics(null));
+            Manager.MainFrame.Navigate(new AddCustomers(null));
         }
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
-            var Spare_parts_in_servicsForRemoving = DgridAvto.SelectedItems.Cast<kd2020.Spare_parts_in_servics>().ToList();
+            var Customers_carsForRemoving = DgridAvto.SelectedItems.Cast<kd2020.Customers_cars>().ToList();
 
-            if (MessageBox.Show($"Удалить следующие {Spare_parts_in_servicsForRemoving.Count()} записи?", "Внимание!",
-                    MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            if (MessageBox.Show($"Вы точно хотите удалить следующие {Customers_carsForRemoving.Count} элементов?", "Внимание",
+            MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 try
                 {
-                    avtoserviceEntities2.GetContext().Spare_parts_in_servics.RemoveRange(Spare_parts_in_servicsForRemoving);
+                    avtoserviceEntities2.GetContext().Customers_cars.RemoveRange(Customers_carsForRemoving);
                     avtoserviceEntities2.GetContext().SaveChanges();
-                    MessageBox.Show("Данные удалены!");
-
-
-                    DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Spare_parts_in_servics.ToList();
+                    MessageBox.Show("Данные удалены");
+                    DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Customers_cars.ToList();
                 }
                 catch (Exception ex)
                 {
@@ -75,12 +67,17 @@ namespace kd2020.Pages
             }
         }
 
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddCustomers((sender as Button).DataContext as Customers_cars));
+        }
+
         private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             if (Visibility == Visibility.Visible)
             {
-                avtoserviceEntities2.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Spare_parts_in_servics.ToList();
+                AE.ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Customers_cars.ToList();
             }
         }
     }

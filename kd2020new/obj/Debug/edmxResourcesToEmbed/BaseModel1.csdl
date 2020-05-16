@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="avtoserviceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="avtoserviceBase" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Cars">
     <Key>
       <PropertyRef Name="cars_id" />
@@ -258,7 +258,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="avtoserviceEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="avtoserviceEntities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Cars" EntityType="Self.Cars" />
     <EntitySet Name="Customers_cars" EntityType="Self.Customers_cars" />
     <EntitySet Name="Masters" EntityType="Self.Masters" />

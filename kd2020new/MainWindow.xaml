@@ -7,25 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid RenderTransformOrigin="0.497,0.287">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
+        <Grid RenderTransformOrigin="0.497,0.287" Margin="0,0,0.333,-0.334" Grid.RowSpan="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="75"/>
                 <RowDefinition Height="150*"/>
                 <RowDefinition Height="209*"/>
                 <RowDefinition Height="30"/>
             </Grid.RowDefinitions>
-            <Image Source="/kd2020;component/Resources/5.jpg" Margin="-386,60,-382,-24" Grid.RowSpan="4"/>
-            <Image Source="/kd2020;component/Resources/icon.png" Margin="-267,0,428,19.667" RenderTransformOrigin="0.37,0.478"></Image>
-            <TextBlock Text="Автосервис FLASH" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="266,10,258.333,19.667" Height="45" Width="269"/>
-            <Grid Panel.ZIndex="-2" Margin="-35,0,-11.667,9.667">
+            <Image Source="/kd2020;component/Resources/5.jpg" Margin="-366,10,-382,-23.667" Grid.RowSpan="4"/>
+            <!--<Image Source="/kd2020;component/Resources/icon.png" Margin="-267,0,428,19.667" RenderTransformOrigin="0.37,0.478"></Image>-->
+            <TextBlock Text="Автосервис FLASH" FontSize="15"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" Margin="181,20,338,30.667" Height="24" Width="274" RenderTransformOrigin="-0.052,0.77" TextAlignment="Center">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="#FFA5A5A5" Opacity="0.5"/>
+                </TextBlock.Background>
+            </TextBlock>
+            <!--<Grid Panel.ZIndex="-2" Margin="-35,0,-11.667,9.667">
                 <Grid.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFECA586" Offset="0"/>
                         <GradientStop Color="#FFFFCF86" Offset="1"/>
                     </LinearGradientBrush>
                 </Grid.Background>
-            </Grid>
+            </Grid>-->
         </Grid>
-        <Frame x:Name="MainFrame" Source="Pages/Page1.xaml" Margin="-10,-10,10.333,9.667" Navigated="MainFrame_Navigated" />
+        <Frame x:Name="MainFrame" Source="Pages/Page1.xaml" Margin="-10,-10,10.333,9.666" Navigated="MainFrame_Navigated" Grid.RowSpan="2" />
     </Grid>
 </Window>

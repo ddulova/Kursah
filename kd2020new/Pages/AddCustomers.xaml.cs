@@ -12,36 +12,41 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static kd2020.PodKey;
 
 namespace kd2020.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AddSpare_parts_in_servics.xaml
+    /// Логика взаимодействия для AddCustomers.xaml
     /// </summary>
-    public partial class AddSpare_parts_in_servics : Page
+    public partial class AddCustomers : Page
     {
-        private Spare_parts_in_servics _currentSpare_parts_in_servics = new Spare_parts_in_servics();
-        public AddSpare_parts_in_servics(Spare_parts_in_servics selectedSpare_parts_in_servics)
+        private Customers_cars _currentCustomers_cars = new Customers_cars();
+        public AddCustomers(Customers_cars selectedCustomers_cars)
         {
             InitializeComponent();
-            if (selectedSpare_parts_in_servics != null)
-                _currentSpare_parts_in_servics = selectedSpare_parts_in_servics;
+            if (selectedCustomers_cars != null)
+                _currentCustomers_cars = selectedCustomers_cars;
 
-            DataContext = _currentSpare_parts_in_servics;
+            DataContext = _currentCustomers_cars;
         }
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
-            //StringBuilder errors = new StringBuilder();
-        
+            StringBuilder errors = new StringBuilder();
+            
+             
+
+            //if (_currentCustomers_cars.date_of_purchase == null)
+            //    errors.AppendLine("Укажите дату выпуска");
 
             //if (errors.Length > 0)
             //{
             //    MessageBox.Show(errors.ToString());
             //    return;
             //}
-            //if (_currentSpare_parts_in_servics == 0)
-            //    avtoserviceEntities2.GetContext().Spare_parts_in_servics.Add(_currentSpare_parts_in_servics);
+            //if (_currentCustomers_cars.cars_id != 0)
+            //    avtoserviceEntities2.GetContext().Customers_cars.Add(_currentCustomers_cars);
             //try
             //{
             //    avtoserviceEntities2.GetContext().SaveChanges();
@@ -52,12 +57,6 @@ namespace kd2020.Pages
             //{
             //    MessageBox.Show(ex.Message.ToString());
             //}
-
-
-
-
-
         }
-       
     }
 }

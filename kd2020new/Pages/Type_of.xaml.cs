@@ -38,27 +38,47 @@ namespace kd2020.Pages
 
 
             }
-            DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Type_of_jobs.ToList();
+           // DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Type_of_jobs.ToList();
         }
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new AddType_of(null));
         }
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
+            var TypeForRemoving = DgridAvto.SelectedItems.Cast<Type_of_jobs>().ToList();
 
+            if (MessageBox.Show($"Вы точно хотите удалить следующие {TypeForRemoving.Count} элементов?", "Внимание",
+            MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    avtoserviceEntities2.GetContext().Type_of_jobs.RemoveRange(TypeForRemoving);
+                    avtoserviceEntities2.GetContext().SaveChanges();
+                    MessageBox.Show("Данные удалены");
+                    DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Type_of_jobs.ToList();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
+            }
         }
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new AddType_of((sender as Button).DataContext as Type_of_jobs));
         }
 
         private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
-
+            if (Visibility == Visibility.Visible)
+            {
+                avtoserviceEntities2.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Type_of_jobs.ToList();
+            }
         }
     }
 }

@@ -39,7 +39,7 @@ namespace kd2020.Pages
 
 
             }
-            // DgridAvto.ItemsSource = avtoserviceEntities3.GetContext().Cars.ToList();
+            // DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Cars.ToList();
             // Заполнение DataGrid
         }
 
@@ -47,7 +47,7 @@ namespace kd2020.Pages
         {
             if (Visibility == Visibility.Visible)
             {
-                avtoserviceEntities2.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                AE.ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
                 DgridAvto.ItemsSource = avtoserviceEntities2.GetContext().Cars.ToList();
             }
         }

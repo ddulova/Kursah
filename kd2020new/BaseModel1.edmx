@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище avtoserviceModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Хранилище avtoserviceBase" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Cars">
           <Key>
             <PropertyRef Name="cars_id" />
@@ -245,7 +245,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Хранилище avtoserviceModelContainer">
+        <EntityContainer Name="Хранилище avtoserviceBaseContainer">
           <EntitySet Name="Cars" EntityType="Self.Cars" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Customers_cars" EntityType="Self.Customers_cars" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Masters" EntityType="Self.Masters" Schema="dbo" store:Type="Tables" />
@@ -298,7 +298,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="avtoserviceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="avtoserviceBase" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Cars">
           <Key>
             <PropertyRef Name="cars_id" />
@@ -557,7 +557,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="avtoserviceEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="avtoserviceEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Cars" EntityType="Self.Cars" />
           <EntitySet Name="Customers_cars" EntityType="Self.Customers_cars" />
           <EntitySet Name="Masters" EntityType="Self.Masters" />
@@ -611,9 +611,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище avtoserviceModelContainer" CdmEntityContainer="avtoserviceEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище avtoserviceBaseContainer" CdmEntityContainer="avtoserviceEntities2">
           <EntitySetMapping Name="Cars">
-            <EntityTypeMapping TypeName="avtoserviceModel.Cars">
+            <EntityTypeMapping TypeName="avtoserviceBase.Cars">
               <MappingFragment StoreEntitySet="Cars">
                 <ScalarProperty Name="cars_id" ColumnName="cars_id" />
                 <ScalarProperty Name="mark" ColumnName="mark" />
@@ -622,7 +622,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Customers_cars">
-            <EntityTypeMapping TypeName="avtoserviceModel.Customers_cars">
+            <EntityTypeMapping TypeName="avtoserviceBase.Customers_cars">
               <MappingFragment StoreEntitySet="Customers_cars">
                 <ScalarProperty Name="cars_id" ColumnName="cars_id" />
                 <ScalarProperty Name="owners_id" ColumnName="owners_id" />
@@ -632,7 +632,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Masters">
-            <EntityTypeMapping TypeName="avtoserviceModel.Masters">
+            <EntityTypeMapping TypeName="avtoserviceBase.Masters">
               <MappingFragment StoreEntitySet="Masters">
                 <ScalarProperty Name="masters_id" ColumnName="masters_id" />
                 <ScalarProperty Name="specialty" ColumnName="specialty" />
@@ -649,7 +649,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="New_spare_parts">
-            <EntityTypeMapping TypeName="avtoserviceModel.New_spare_parts">
+            <EntityTypeMapping TypeName="avtoserviceBase.New_spare_parts">
               <MappingFragment StoreEntitySet="New_spare_parts">
                 <ScalarProperty Name="parts_id" ColumnName="parts_id" />
                 <ScalarProperty Name="names" ColumnName="names" />
@@ -660,7 +660,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Orders">
-            <EntityTypeMapping TypeName="avtoserviceModel.Orders">
+            <EntityTypeMapping TypeName="avtoserviceBase.Orders">
               <MappingFragment StoreEntitySet="Orders">
                 <ScalarProperty Name="orders_id" ColumnName="orders_id" />
                 <ScalarProperty Name="cars_id" ColumnName="cars_id" />
@@ -671,7 +671,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Owners">
-            <EntityTypeMapping TypeName="avtoserviceModel.Owners">
+            <EntityTypeMapping TypeName="avtoserviceBase.Owners">
               <MappingFragment StoreEntitySet="Owners">
                 <ScalarProperty Name="owners_id" ColumnName="owners_id" />
                 <ScalarProperty Name="last_name" ColumnName="last_name" />
@@ -685,7 +685,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Role">
-            <EntityTypeMapping TypeName="avtoserviceModel.Role">
+            <EntityTypeMapping TypeName="avtoserviceBase.Role">
               <MappingFragment StoreEntitySet="Role">
                 <ScalarProperty Name="masters_id" ColumnName="masters_id" />
                 <ScalarProperty Name="login" ColumnName="login" />
@@ -695,7 +695,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Servicess">
-            <EntityTypeMapping TypeName="avtoserviceModel.Servicess">
+            <EntityTypeMapping TypeName="avtoserviceBase.Servicess">
               <MappingFragment StoreEntitySet="Servicess">
                 <ScalarProperty Name="servicess_id" ColumnName="servicess_id" />
                 <ScalarProperty Name="id_type" ColumnName="id_type" />
@@ -705,7 +705,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Spare_parts_in_servics">
-            <EntityTypeMapping TypeName="avtoserviceModel.Spare_parts_in_servics">
+            <EntityTypeMapping TypeName="avtoserviceBase.Spare_parts_in_servics">
               <MappingFragment StoreEntitySet="Spare_parts_in_servics">
                 <ScalarProperty Name="parts_id" ColumnName="parts_id" />
                 <ScalarProperty Name="servicess_id" ColumnName="servicess_id" />
@@ -714,7 +714,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="avtoserviceModel.sysdiagrams">
+            <EntityTypeMapping TypeName="avtoserviceBase.sysdiagrams">
               <MappingFragment StoreEntitySet="sysdiagrams">
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -725,7 +725,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Type_of_jobs">
-            <EntityTypeMapping TypeName="avtoserviceModel.Type_of_jobs">
+            <EntityTypeMapping TypeName="avtoserviceBase.Type_of_jobs">
               <MappingFragment StoreEntitySet="Type_of_jobs">
                 <ScalarProperty Name="id_type" ColumnName="id_type" />
                 <ScalarProperty Name="names" ColumnName="names" />

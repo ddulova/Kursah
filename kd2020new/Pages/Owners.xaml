@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:kd2020.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Owners">
+      Title="Owners" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
         <Grid.RowDefinitions>

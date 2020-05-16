@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.Data.SqlClient;
 using static kd2020.PodKey;
 using kd2020.Pages;
+using System.IO;
 
 
 namespace kd2020.Pages
@@ -23,14 +24,27 @@ namespace kd2020.Pages
 
 {
     public partial class Page1 : Page
-    {
-        
 
+    {
+        StreamReader sr;
+        FileInfo file;
+        StreamWriter sw;
         public Page1()
         {
 
             InitializeComponent();
+            file = new FileInfo("auth.dll");
+            if (file.Exists)
+            {
+                sr = new StreamReader("auth.dll");
+                login.Text = sr.ReadLine();
+                password.Password = sr.ReadLine();
+                sr.Close();
+            }
+            
         }
+
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             {
@@ -38,9 +52,16 @@ namespace kd2020.Pages
                 foreach (Role r in rols)
                 {
 
-                    if (r.login == login.Text && r.password == password.Text)
+                    if (r.login == login.Text && r.password == password.Password)
                     {
                         MessageBox.Show("Вход выполнен"); Roly = r.role1;
+                        if (Regme.IsChecked == true)
+                        {
+                            sw = new StreamWriter("auth.dll");
+                            sw.WriteLine(login.Text);
+                            sw.WriteLine(password.Password);
+                            sw.Close();
+                        }
 
 
                         NavigationService.Navigate(new Glav());

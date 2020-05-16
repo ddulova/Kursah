@@ -166,6 +166,9 @@
     <Compile Include="AddOrders.xaml.cs">
       <DependentUpon>AddOrders.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddOwners.xaml.cs">
+      <DependentUpon>AddOwners.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BaseModel1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -203,23 +206,26 @@
     <Compile Include="Pages\AddCar.xaml.cs">
       <DependentUpon>AddCar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddCustomers.xaml.cs">
+      <DependentUpon>AddCustomers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AddRole.xaml.cs">
       <DependentUpon>AddRole.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AddSpare_parts_in_servics.xaml.cs">
-      <DependentUpon>AddSpare_parts_in_servics.xaml</DependentUpon>
+    <Compile Include="Pages\AddType_of.xaml.cs">
+      <DependentUpon>AddType_of.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ClientInfo.xaml.cs">
       <DependentUpon>ClientInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Customers_cars.xaml.cs">
+      <DependentUpon>Customers_cars.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Glav.xaml.cs">
       <DependentUpon>Glav.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Masters.xaml.cs">
       <DependentUpon>Masters.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\New_spare_parts.xaml.cs">
-      <DependentUpon>New_spare_parts.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Orders.xaml.cs">
       <DependentUpon>Orders.xaml</DependentUpon>
@@ -232,9 +238,6 @@
     </Compile>
     <Compile Include="Pages\Roli.xaml.cs">
       <DependentUpon>Roli.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Spare_parts_in_servics.xaml.cs">
-      <DependentUpon>Spare_parts_in_servics.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Type_of.xaml.cs">
       <DependentUpon>Type_of.xaml</DependentUpon>
@@ -263,6 +266,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AddOwners.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -279,15 +286,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\AddCustomers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AddRole.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\AddSpare_parts_in_servics.xaml">
+    <Page Include="Pages\AddType_of.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ClientInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Customers_cars.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -296,10 +311,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Masters.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\New_spare_parts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -320,10 +331,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Roli.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\Spare_parts_in_servics.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

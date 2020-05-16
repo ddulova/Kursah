@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static kd2020.PodKey;
 
 namespace kd2020.Pages
 {
@@ -20,16 +21,42 @@ namespace kd2020.Pages
     /// </summary>
     public partial class AddCar : Page
     {
+        private string Mode;
         private Cars _currentCars = new Cars();
         public AddCar(Cars selectedCars)
         {
             InitializeComponent();
+            if (selectedCars != null)
+            {
+                OwnersList.Visibility = Visibility.Hidden;
+                Mode = "Edit";
+                IDCAR.IsEnabled = false;
+
+
+            }
+            else
+            {
+                OwnersList.Visibility = Visibility.Visible;
+                StackPanel sp = new StackPanel();
+                foreach (kd2020.Owners o in AE.Owners)
+                {
+                    RadioButton r = new RadioButton();
+                    r.Content = o.last_name + " " + o.first_name;
+                    r.GroupName = "Owners_names";
+                    sp.Children.Add(r);
+                }
+                OwnersList.Content = sp;
+                Mode = "New";
+                IDCAR.IsEnabled = true;
+
+            }
 
             if (selectedCars != null)
                 _currentCars = selectedCars;
 
             DataContext = _currentCars;
         }
+
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
@@ -42,17 +69,59 @@ namespace kd2020.Pages
                 errors.AppendLine("Укажите марку машины");
             if (_currentCars.year_of_issue == null)
                 errors.AppendLine("Укажите дату выпуска");
-
+            int oId = -1;
+            if (Mode == "New")
+            {
+                StackPanel sp = (StackPanel)OwnersList.Content;
+                
+                foreach (RadioButton r in sp.Children)
+                {
+                    if (r.IsChecked == true)
+                    {
+                        foreach (kd2020.Owners o in AE.Owners)
+                        {
+                            //MessageBox.Show((o.last_name + " " + o.first_name)+" " +(r.Content));
+                            if ((o.last_name + " " + o.first_name) == (string)(r.Content)) 
+                            {
+                                oId = o.owners_id;
+                               
+                                
+                            }
+                        }
+                        
+                    }
+                }
+                if (oId == -1) errors.AppendLine("Выберите владельца машины");
+            }
+          
                     if(errors.Length > 0)
             {
                 MessageBox.Show(errors.ToString());
                 return;
+
             }
-            if (_currentCars.cars_id != 0 && _currentCars.cars_id > 9999)
-                avtoserviceEntities2.GetContext().Cars.Add(_currentCars);
-             try
+
+            if (Mode == "New")
             {
-                avtoserviceEntities2.GetContext().SaveChanges();
+
+                AE.Cars.Add(_currentCars);
+                kd2020.Customers_cars cc = new kd2020.Customers_cars();
+                cc.Owners = AE.Owners.Find(oId);
+                cc.Cars = _currentCars;
+                cc.date_of_purchase = _currentCars.year_of_issue;
+                AE.Customers_cars.Add(cc);
+            }
+            else
+            {
+
+                Cars o = AE.Cars.Find(_currentCars.cars_id);
+                o.mark = _currentCars.mark;
+                o.year_of_issue = _currentCars.year_of_issue;
+            }
+
+            try
+            {
+                AE.SaveChanges();
                 MessageBox.Show("Информация сохранена");
                 Manager.MainFrame.GoBack();
             }
