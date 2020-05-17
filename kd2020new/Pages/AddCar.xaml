@@ -28,7 +28,7 @@
         <TextBox Name="MARK" Text ="{Binding mark}" Grid.Column="1" Width="421" Grid.Row="1" HorizontalAlignment="Left" Margin="5,41.333,0,41.333"/>
         <TextBox Name="YEWAROFI" Text ="{Binding  year_of_issue}" MaxLength="50" Width="421" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Margin="5,40.667,0,41.333"/>
         <Button Content="Сохранить" Grid.Row="3" Name="BtnSave" Click="BtnSave_Click" Grid.Column="1" Margin="112,41.667,109,41" Height="Auto" Width="Auto"/>
-        <ScrollViewer Name="OwnersList" Grid.Column="2" HorizontalAlignment="Left" Height="214" Margin="10,0.333,0,0" VerticalAlignment="Top" Width="154" Grid.Row="1" Grid.RowSpan="2"/>
+        <ScrollViewer Name="OwnersList" Grid.Column="2" HorizontalAlignment="Left" Height="214" Margin="10,0.333,0,0" VerticalAlignment="Top" Width="154" Grid.Row="1" Grid.RowSpan="2" Background="Orange" Opacity="50" />
 
     </Grid>
 </Page>
